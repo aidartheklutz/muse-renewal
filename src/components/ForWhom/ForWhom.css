@@ -1,0 +1,54 @@
+.audience-section {
+  background-color: var(--color-surface);
+}
+
+.audience-card {
+  padding: 64px;
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 90px;
+  color: var(--color-white);
+  background-color: var(--color-accent-dark);
+}
+
+.audience-card .eyebrow {
+  color: var(--color-accent-light);
+}
+
+.audience-card h2 {
+  margin: 18px 0 0;
+  font-family: var(--font-heading);
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.audience-list {
+  border-top: 1px solid var(--color-accent);
+}
+
+.audience-list p {
+  margin: 0;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--color-accent);
+  display: flex;
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 850px) {
+  .audience-card {
+    padding: 48px;
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+}
+
+@media (max-width: 520px) {
+  .audience-card {
+    width: calc(100% - 32px);
+    padding: 38px 24px;
+    border-radius: 12px;
+  }
+}
